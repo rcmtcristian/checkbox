@@ -14,22 +14,38 @@
     <ul>
       <li> 
         <div>
-             <span>todo list</span>
+          <label for="todo">todo list </label>
+          <input id="todo" type="datetime-local" name="todolist" value="2022-06-01T08:30">
+          <button onclick="displayContent()">ADD</button>
         </div>
     </li>
-      <li> 
+    <li > 
+      <div>
+         <!-- <label class="checkbox-button">  -->
+             <input class="strikethrough" type="text" id="content"/>
+           <!-- <label class="strikethrough">typing practice </label> -->
+        
+           
+      </div>
+  </li>
+
+      <li id="fill" > 
           <div>
              <label class="checkbox-button"> 
                  <span class="check-text"> </span>
                  <input class="checkbox-round" type="checkbox" name="compare" >
-               <label class="strikethrough">typing practice </label>
+                 <label class="strikethrough" type="text" id="content-box"/>
+               <!-- <label class="strikethrough">typing practice </label> -->
+               <span></span>
                <span>|</span>
                <span class="checkmark"></span>
                </label>
                <span>30 minutes</span>
           </div>
       </li>
-      <li> 
+
+
+      <!-- <li> 
         <div>
            <label class="checkbox-button"> 
                <span class="check-text"> </span>
@@ -79,8 +95,8 @@
           </div>
     </div>
 </li>
-<li> 
-  <div>
+<li>  -->
+  <!-- <div>
      <label class="checkbox-button"> 
          <span class="check-text"> </span>
          <input class="checkbox-round" type="checkbox" name="compare" >
@@ -115,6 +131,30 @@
        <span>10 minutes</span>
   </div>
 </li>
+<li> 
+  <div>
+     <label class="checkbox-button"> 
+         <span class="check-text"> </span>
+         <input class="checkbox-round" type="checkbox" name="compare" >
+       <label class="strikethrough"> Anki </label>
+       <span>|</span>
+       <span class="checkmark"></span>
+       </label>
+       <span>30 minutes</span>
+  </div>
+</li>
+<li> 
+  <div>
+     <label class="checkbox-button"> 
+         <span class="check-text"> </span>
+         <input class="checkbox-round" type="checkbox" name="compare" >
+       <label class="strikethrough"> connect with more people </label>
+       <span>|</span>
+       <span class="checkmark"></span>
+       </label>
+       <span>30 minutes</span>
+  </div>
+</li> -->
 
     </ul>
 

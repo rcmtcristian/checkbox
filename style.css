@@ -2,8 +2,13 @@ body {
   margin: auto;
   color: #ccc;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28px;
 }
 
+#content {
+  height: 100%;
+width: 400px;
+}
 
 article {
   display: flex;
@@ -26,15 +31,16 @@ li {
 }
 
 div {
-  
+  justify-content: center;
   display: inline-block;
  
 }
 
 .strikethrough {
+  
   transition: ease-in 100ms;
 }
-
+/*text-crossout*/
 input[type=checkbox]:checked + label.strikethrough{
   transition: 1s;
   text-decoration: line-through;
@@ -45,11 +51,52 @@ p{
   display: inline-block;
   
 }
+/* add button */
+button {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
 
+button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
 
+/*time*/
+#todo{
+  font-size: 20px;
+ margin-left: 95px;
+ position: relative;
+  background: none;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
 /*dropdown*/
 .right select {
-  font-size: .5rem;
+  font-size: 1rem;
   background: #ccc;
   color:#32444b;
   width: 20px;
